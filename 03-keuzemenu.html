@@ -7,6 +7,8 @@
     <!-- WARNING: for iOS 7, remove the width=device-width and height=device-height attributes. See https://issues.apache.org/jira/browse/CB-4323 -->
     <meta name="viewport" content="user-scalable=no, initial-scale=1, maximum-scale=1, minimum-scale=1, width=device-width, height=device-height, target-densitydpi=device-dpi" />
     <link rel="stylesheet" type="text/css" href="css/index.css" />
+    <link rel="stylesheet" type="text/css" href="css/phonon.css" />
+    <link rel="stylesheet" type="text/css" href="css/ownshitapp.css" />
     <title>Shitapp</title>
 
     <script type="text/javascript" charset="utf-8" src="cordova-1.5.0.js"></script>
@@ -34,12 +36,15 @@
     </script>
 </head>
 <body onLoad="onLoad();">
-<div class="app">
-    <h1>Keuzemenu</h1>
-
-        <button name="buttonClick" onclick="callAnothePage()">Foto maken</button>
-        <button name="buttonClick2" onclick="callAnothePage2()">Reden geven</button>
-</div>
+    <header class="header-bar">
+        <h1 class="title">Keuzemenu</h1>
+    </header>
+    
+    <div class="container">
+        <h1>Keuzemenu</h1>
+        <button class="btn btn-primary" name="buttonClick" onclick="callAnothePage()">Foto maken</button>
+        <button class="btn btn-primary" onclick="callAnothePage2()">Reden geven</button>
+    </div>
 <script type="text/javascript" src="cordova.js"></script>
 <script type="text/javascript" src="js/index.js"></script>
 <script type="text/javascript">
