@@ -29,13 +29,14 @@
         <link rel="stylesheet" type="text/css" href="css/index.css" />
         <title>Hello World</title>
 
+        <script type="text/javascript" charset="utf-8" src="cordova-1.7.0.js"></script>
           <script type="text/javascript" charset="utf-8">
 
 				var pictureSource;   // picture source
 				var destinationType; // sets the format of returned value
-			
+
 				document.addEventListener("deviceready",onDeviceReady,false);
-			
+
 				function onDeviceReady() {
 					pictureSource=navigator.camera.PictureSourceType;
 					destinationType=navigator.camera.DestinationType;
@@ -44,7 +45,7 @@
                     /*
 				function capturePhoto() {
 				// Take picture using device camera and retrieve image as base64-encoded string
-					navigator.camera.getPicture(onPhotoDataSuccess, onFail, { 
+					navigator.camera.getPicture(onPhotoDataSuccess, onFail, {
 						quality: 50,
 						correctOrientation: true
 						});
@@ -57,64 +58,34 @@
                         destinationType: destinationType.DATA_URI,
                         correctOrientation: true});
                 }
-				
+
 				//Callback function when the picture has been successfully taken
-				function onPhotoDataSuccess(imageData) {                
+				function onPhotoDataSuccess(imageURI) {
 					// Get image handle
 					var smallImage = document.getElementById('smallImage');
                     //get button to save image
 					var saveImage = document.getElementById('saveImage');
-				
+
 					// Unhide image and button elements
 					smallImage.style.display = 'block';
 					saveImage.style.display = "block";
-					smallImage.src = imageData;
+					//smallImage.src = imageData;
+
+                    smallImage.src = imageURI;
+                    if(sessionStorage.isprofileimage==1){
+                        getLocation();
+                    }
+                    //alert(imageURI);
 				}
-				
+
 				//Callback function when the picture has not been successfully taken
 				function onFail(message) {
 					alert('Failed to load picture because: ' + message);
 				}
-								
-				function movePic(file){ 
-					window.resolveLocalFileSystemURI(file, resolveOnSuccess, resOnError); 
-				} 
-				
-				//Callback function when the file system uri has been resolved
-				function resolveOnSuccess(entry){ 
-					alert("Het werkt hier");
-					var d = new Date();
-					var n = d.getTime();
-					//new file name
-					var newFileName = n + ".jpg";
-					var myFolderApp = "Testsavefolder";
-				
-					window.requestFileSystem(LocalFileSystem.PERSISTENT, 0, function(fileSys) {      
-					//The folder is created if doesn't exist
-					fileSys.root.getDirectory( 
-					myFolderApp,{	create:true, 
-									exclusive: false},
-									function(directory) {
-										entry.moveTo(directory, newFileName,  successMove, resOnError);
-									},
-									resOnError);
-									},
-					resOnError);
-				}
-				
-				//Callback function when the file has been moved successfully - inserting the complete path
-				function successMove(entry) {
-					//I do my insert with "entry.fullPath" as for the path
-					 alert("New Path: " + entry.fullPath);
-				}
-				
-				function resOnError(error) {
-					alert(error.code);
-				}
 
           </script>
     </head>
-    <body onLoad="onLoad();">
+    <body>
             <h1>Foto maken</h1>
             <p>
             	Test
@@ -126,7 +97,7 @@
             		
         	</div>
         <script type="text/javascript" src="cordova.js"></script>
-        <script type="text/javascript" src="js/index.js"></script>
+        <!--<script type="text/javascript" src="js/index.js"></script>-->
         <script type="text/javascript">
             app.initialize();
         </script>
