@@ -5,20 +5,27 @@
 function scan() {
     cordova.plugins.barcodeScanner.scan(
         function (result) {
-            var barcode =  ("We got a barcode\n" +
+            /*
+            alert ("We got a barcode\n" +
                 "Result: " + result.text + "\n" +
                 "Format: " + result.format + "\n" +
-                "Cancelled: " + result.cancelled);
-            alert (barcode);
-            return barcode;
-            document.getElementById('barcode').value = barcode;
+                "Cancelled: " + result.cancelled);*/
 
-            document.getElementById("barcodetext").innerHTML = barcode;
+            var barcode = result.text;
+            //alert(barcode);
+            document.getElementById('barcode').value = barcode;
+            window.localStorage.setItem("barcode", barcode);
         },
         function (error) {
             alert("Scanning failed: " + error);
         }
     );
+
+    /*
+    var barcode = "123456789789";
+    document.getElementById('barcode').value = barcode;
+    window.localStorage.setItem("key", barcode);*/
+
 };
 
 var pictureSource;   // picture source
@@ -67,7 +74,7 @@ function onPhotoDataSuccess(imageURI) {
     //alert(imageURI);
     var imageLink = imageURI;
     document.getElementById('image').value = imageLink;
-    document.getElementById("imagemain").innerHTML = imageLink;
+    window.localStorage.setItem("foto", imageLink);
 }
 
 //Callback function when the picture has not been successfully taken
