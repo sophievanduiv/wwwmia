@@ -29,13 +29,15 @@
              }
 
           </script>
+          <script src="js/plugincode.js"></script>
+
     </head>
     <body onLoad="onLoad();">
-            <h1>Scan toiletcode</h1>
-            
-            <script src="js/plugincode.js"></script>
 
-            <button name="buttonClick" onclick="scan()">Scan</button>
+        <div class="app">
+            <h1>Scan toiletcode</h1>
+
+            <button name="buttonClick" onclick="scan();">Scan</button>
 
             <form id="contact_form" method="post" onSubmit="return false">
                 <label>Barcode info:</label><br>
@@ -43,8 +45,8 @@
             </form>
 
             <button name="buttonClick" onclick="callAnothePage()">Start</button>
-            		
         </div>
+
         <script type="text/javascript" src="cordova.js"></script>
         <script type="text/javascript" src="js/index.js"></script>
         <script type="text/javascript">

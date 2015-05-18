@@ -53,6 +53,8 @@
 
     </head>
     <body onLoad="onLoad();">
+
+        <div class="app">
             <h1>Foto maken</h1>
             <p>
             	Test
@@ -67,11 +69,25 @@
                 <input type="text" name="image" id="image" value="nog niks" class="requiredform">
             </form>
 
-        	</div>
+            <script>
+
+                (function (global) {
+                    document.getElementById("saveImage").addEventListener("click", function () {
+                        global.localStorage.setItem("delenFoto", document.getElementById("image").value);
+                    }, false);
+                }(window));
+
+
+            </script>
+
+        </div>
+
         <script type="text/javascript" src="cordova.js"></script>
         <!--<script type="text/javascript" src="js/index.js"></script>-->
+        <script type="text/javascript" src="js/cookies.js"></script>
         <script type="text/javascript">
             app.initialize();
         </script>
+
     </body>
 </html>
