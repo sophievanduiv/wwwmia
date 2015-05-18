@@ -30,62 +30,29 @@
         <title>Hello World</title>
 
         <script type="text/javascript" charset="utf-8" src="cordova-1.7.0.js"></script>
+
+          <script src="js/plugincode.js"></script>
           <script type="text/javascript" charset="utf-8">
 
-				var pictureSource;   // picture source
-				var destinationType; // sets the format of returned value
+              function onLoad()
+              {
+                  document.addEventListener("deviceready", onDeviceReady, true);
+              }
 
-				document.addEventListener("deviceready",onDeviceReady,false);
+              function onDeviceReady()
+              {
+                  // navigator.notification.alert("PhoneGap is working");
+              }
 
-				function onDeviceReady() {
-					pictureSource=navigator.camera.PictureSourceType;
-					destinationType=navigator.camera.DestinationType;
-				}
-
-                    /*
-				function capturePhoto() {
-				// Take picture using device camera and retrieve image as base64-encoded string
-					navigator.camera.getPicture(onPhotoDataSuccess, onFail, {
-						quality: 50,
-						correctOrientation: true
-						});
-				}*/
-
-                function capturePhoto() {
-                    // Take picture using device camera and retrieve image as base64-encoded string
-                    navigator.camera.getPicture(onPhotoDataSuccess, onFail, {
-                        quality: 50,
-                        destinationType: destinationType.DATA_URI,
-                        correctOrientation: true});
+                function callAnothePage()
+                {
+                    window.location = "03-keuzemenu.html";
                 }
 
-				//Callback function when the picture has been successfully taken
-				function onPhotoDataSuccess(imageURI) {
-					// Get image handle
-					var smallImage = document.getElementById('smallImage');
-                    //get button to save image
-					var saveImage = document.getElementById('saveImage');
-
-					// Unhide image and button elements
-					smallImage.style.display = 'block';
-					saveImage.style.display = "block";
-					//smallImage.src = imageData;
-
-                    smallImage.src = imageURI;
-                    if(sessionStorage.isprofileimage==1){
-                        getLocation();
-                    }
-                    //alert(imageURI);
-				}
-
-				//Callback function when the picture has not been successfully taken
-				function onFail(message) {
-					alert('Failed to load picture because: ' + message);
-				}
-
           </script>
+
     </head>
-    <body>
+    <body onLoad="onLoad();">
             <h1>Foto maken</h1>
             <p>
             	Test
@@ -93,8 +60,13 @@
             
           	<button onclick="capturePhoto();">Capture Photo</button> <br>
             <img style="display:none;" width="100%" id="smallImage" src="" />
-            <button style="display:none;" id="saveImage" onclick="resolveOnSuccess();">Save photo</button> <br>
-            		
+            <button style="display:none;" id="saveImage" onclick="callAnothePage();">Save photo</button> <br>
+
+            <form id="contact_form" method="post" onSubmit="return false">
+                <label>Foto:</label><br>
+                <input type="text" name="image" id="image" value="nog niks" class="requiredform">
+            </form>
+
         	</div>
         <script type="text/javascript" src="cordova.js"></script>
         <!--<script type="text/javascript" src="js/index.js"></script>-->
