@@ -54,39 +54,25 @@
 
     </head>
     <body onLoad="onLoad();">
-<<<<<<< HEAD
         <header class="header-bar">
             <h1 class="title">Foto nemen</h1>
         </header>    
         <h1>Foto maken</h1>
-=======
 
         <div class="app">
             <h1>Foto maken</h1>
->>>>>>> origin/master
             <p>
             	Test
             </p>
             
           	<button onclick="capturePhoto();">Capture Photo</button> <br>
-            <img style="display:none;" width="100%" id="smallImage" src="" />
             <button style="display:none;" id="saveImage" onclick="callAnothePage();">Save photo</button> <br>
+            <img style="display:none;" width="100%" id="smallImage" src="" />
 
             <form id="contact_form" method="post" onSubmit="return false">
                 <label>Foto:</label><br>
                 <input type="text" name="image" id="image" value="nog niks" class="requiredform">
             </form>
-
-            <script>
-
-                (function (global) {
-                    document.getElementById("saveImage").addEventListener("click", function () {
-                        global.localStorage.setItem("delenFoto", document.getElementById("image").value);
-                    }, false);
-                }(window));
-
-
-            </script>
 
         </div>
 
