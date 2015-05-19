@@ -9,6 +9,7 @@
         <meta name="viewport" content="user-scalable=no, initial-scale=1, maximum-scale=1, minimum-scale=1, width=device-width, height=device-height, target-densitydpi=device-dpi" />
         <link rel="stylesheet" type="text/css" href="css/index.css" />
         <link rel="stylesheet" type="text/css" href="css/phonon.css" />
+        <link rel="stylesheet" type="text/css" href="css/ownshitapp.css" />
         <title>Hello World</title>
         
          <script type="text/javascript" charset="utf-8" src="cordova-1.5.0.js"></script>      
@@ -34,23 +35,21 @@
 
     </head>
     <body onLoad="onLoad();">
-<<<<<<< HEAD
+       <div class="container">
         <header class="header-bar">
+            <a href="01-meldingstart.html" class="btn-action pull-left">Vorige</a>
             <h1 class="title">Barcode Scannen</h1>
-        </header>    
+        </header>  
+        
         <h1>Scan toiletcode</h1>
             
             <script src="js/plugincode.js"></script>
-=======
-
-        <div class="app">
-            <h1>Scan toiletcode</h1>
->>>>>>> origin/master
 
             <button name="buttonClick" onclick="scan();">Scan</button>
 
             <form id="contact_form" method="post" onSubmit="return false">
                 <label>Barcode info:</label><br>
+                <!-- Door "input" denkt css nu dat het een invulveld is, hier moet ik nog even naar kijken -->
                 <input type="text" name="barcode" id="barcode" value="nog niks" class="requiredform">
             </form>
 

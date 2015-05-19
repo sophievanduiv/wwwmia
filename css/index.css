@@ -64,8 +64,8 @@ body {
 /* Portrait layout (default) */
 .startScherm {
     position:absolute;             /* position in the center of the screen */
-    left:48%;
-    top:48%;
+    left:40%;
+    top:50%;
     text-align:center;
     margin:-115px 0px 0px -112px;  /* offset vertical: half of image height and text area height */
                                    /* offset horizontal: half of text area width */
