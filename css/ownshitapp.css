@@ -1,20 +1,88 @@
+/*FONTS*/
+@font-face {
+    font-family: 'quicksandbook';
+    src: url('Quicksand_Book-webfont.eot');
+    src: url('Quicksand_Book-webfont.eot?#iefix') format('embedded-opentype'),
+    url('Quicksand_Book-webfont.woff2') format('woff2'),
+    url('Quicksand_Book-webfont.woff') format('woff'),
+    url('Quicksand_Book-webfont.ttf') format('truetype'),
+    url('Quicksand_Book-webfont.svg#quicksandbook') format('svg');
+    font-weight: normal;
+    font-style: normal;
+
+}
+
+@font-face {
+    font-family: 'quicksandlight';
+    src: url('Quicksand_Light-webfont.eot');
+    src: url('Quicksand_Light-webfont.eot?#iefix') format('embedded-opentype'),
+    url('Quicksand_Light-webfont.woff2') format('woff2'),
+    url('Quicksand_Light-webfont.woff') format('woff'),
+    url('Quicksand_Light-webfont.ttf') format('truetype'),
+    url('Quicksand_Light-webfont.svg#quicksandlight') format('svg');
+    font-weight: normal;
+    font-style: normal;
+    text-shadow: 2px 2px #000;
+    color: white;
+}
+
 .container{
-    width:100%;
     height:90px;
     margin-top:10%;
     padding-top:10%;
     /*background-color: #000;*/
-    position:absolute;
     text-align: center;
     text-decoration-color: #000;
+    width: 100%;
 }
 
 h1{
- font-size:20px; 
+    font-size:20px;
     font-weight: bold;
+    font-family: 'quicksandbook' !important;
+    text-align: center;
+    margin-bottom: 30px;
 }
 
+p {
+   font-family: Helvetica, "Helvetica Neue", Arial, sans-serif;
+   text-transform: none;
+}
 .centering{
  position: relative;
-    
 }
+
+.content {
+    margin-left: 20px;
+    margin-right: 20px;
+}
+
+#deviceready {
+  margin-top: 30px;
+}
+
+.padded-for-cell {
+    background: #333333;
+    color: #ffffff;
+    font-size: 14px;
+    text-transform: uppercase;
+    padding: 12px 30px;
+    text-align: center;
+    margin: auto 0;
+}
+
+.redenenlijst label {
+    width: 80%;
+    margin-left: 10%;
+    margin-right: 10%;
+}
+.redenenlijst label input[type=checkbox] {
+    float: left;
+}
+
+.redenenlijst p {
+    float: left;
+    text-align: left;
+    margin-left: 20px;
+}
+

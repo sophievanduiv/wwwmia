@@ -11,6 +11,7 @@
         <!--The Stylesheets for the application-->
         <link rel="stylesheet" type="text/css" href="css/index.css" />
         <link rel="stylesheet" type="text/css" href="css/phonon.css" />
+        <link rel="stylesheet" type="text/css" href="css/ownshitapp.css" />
 
         <!--Title of the Application-->
         <title>Shitapp</title>
@@ -18,86 +19,36 @@
         <!--Loading all the Javascript Files-->
         <script type="text/javascript" src="js/jquery-1.11.3.js"></script>
 
-         <!--<script type="text/javascript" charset="utf-8" src="cordova-1.5.0.js"></script>-->
-         <script type="text/javascript" charset="utf-8">
+        <!--Loadfunction for Phonegap-->
+        <script type="text/javascript" charset="utf-8">
 
-             function onLoad() {
-                  document.addEventListener("deviceready", onDeviceReady, true);
-             }
+        </script>
 
-             function onDeviceReady() {
-                  // navigator.notification.alert("PhoneGap is working");
-             }
-
-             function callAnothePage() {
-                 window.location = "01-meldingstart.html";
-             }
-
-
-          </script>
     </head>
 
     <body onLoad="onLoad();">
-<<<<<<< HEAD
 
-            <div class="startScherm">
+        <!--All our pages, javascript is found in plugincode.js-->
+        <!--Switching pages is done by navigation.js-->
+        <div class="app-page" id="00-welkomscherm"></div>
+        <div class="app-page" id="01-meldingstart"></div>
+        <div class="app-page" id="02-barcode"></div>
+        <div class="app-page" id="03-keuzemenu"></div>
+        <!--<div class="app-page" id="04-camera"></div>-->
+        <div class="app-page" id="05-redenen"></div>
+        <div class="app-page" id="06-overzicht"></div>
+        <div class="app-page" id="07-verzonden"></div>
 
-                <header>
-                    <h1>SHITAPP</h1>
-                </header>
-                <div class="logo">
-                    <img src="img/logo-wc.svg" alt="logo" height="100" width="300">
-                </div>
 
-                <div id="deviceready" class="blink">
-
-                    <p class="event listening">Laden</p>
-                    <p class="event received">Laden voltooid</p>
-
-                    <button id="homeButton" name="buttonClick" onclick="callAnothePage()">Begin</button>
-
-                    <div class="app">
-
-                        <h1>Schattigheidapp</h1>
-
-                        <p>
-                            Nina Hermens <br>
-                            Sophie van Duivenboden
-                        </p>
-
-                        <div id="deviceready">
-                            <p class="event listening">Verbinding aan het maken...</p>
-                            <p class="event received">Verbinding is klaar! Je kan verder!</p>
-
-                            <button name="buttonClick" onclick="loadMeldingen();">Click Me!</button>
-                        </div>
-
-                    </div>
-
-                </div>
-
-=======
-        <div class="startScherm">
-            <header>
-                <h1>SHITAPP</h1>
-            </header>
-            <div class="logo">
-                <img src="img/logo-wc.svg" alt="logo" height="100" width="300">
-            </div>
-            
-            <div id="deviceready" class="blink">
-                <p class="event listening">Laden</p>
-                <p class="event received">Laden voltooid</p>
-                <button id="homeButton" name="buttonClick" onclick="callAnothePage()">Begin</button>
->>>>>>> origin/master
-            </div>
-
-        <!--<script type="text/javascript" src="cordova.js"></script>-->
-        <script type="text/javascript" src="js/index.js"></script>
-        <script type="text/javascript" src="js/plugincode.js"></script>
-        <script type="text/javascript">
-            app.initialize();
-        </script>
+    <!--Connect to all the Javascript Files-->
+    <script type="text/javascript" src="cordova.js"></script>
+    <script type="text/javascript" src="js/index.js"></script>
+    <script type="text/javascript" src="js/phonon/support.js"></script>
+    <script type="text/javascript" src="js/phonon/navigator.js"></script>
+    <script type="text/javascript" src="plugincode.js"></script>
+    <script type="text/javascript">
+        app.initialize();
+    </script>
 
     </body>
 </html>

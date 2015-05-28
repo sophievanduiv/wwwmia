@@ -1,0 +1,24 @@
+    <header class="header-bar">
+        <a href="#!02-barcode" class="btn-action pull-left">Vorige</a>
+        <h1 class="title">Keuzemenu</h1>
+    </header>
+    
+    <div class="container">
+        <h1>Maak hier je eerste keuze</h1>
+
+        <p>
+            Als je wilt kan je een foto maken (als de wc er bijvoorbeeld heel smerig uitziet). Hier na kan je reden opgeven. <br><br>
+            Vindt je het niet nodig om een foto te maken maar alleen iets door te geven? Ga dan meteen door naar reden doorgeven!
+        </p>
+
+        <div id="deviceready">
+            <button style="margin-bottom: 20px;" onclick="capturePhoto();">Capture Photo</button> <br>
+            <a class="padded-for-cell" style="display:none;" id="saveImage" href="#!05-redenen">Foto opslaan en verzenden</a>
+        </div>
+
+        <form id="contact_form" method="post" onSubmit="return false">
+            <input style="display: none;" type="text" name="image" id="image" value="nog niks" class="requiredform">
+        </form>
+        <img style="display:none;" width="100%" id="smallImage" src="" />
+
+    </div>

@@ -1,0 +1,23 @@
+<header class="header-bar">
+    <a href="#!01-meldingstart" class="btn-action pull-left">Vorige</a>
+    <h1 class="title">Barcode Scannen</h1>
+</header>
+
+<div class="container">
+
+    <h1>Scan toiletcode</h1>
+
+    <form id="contact_form" method="post" onSubmit="return false">
+        <label>Barcode info:</label><br>
+        <!-- Door "input" denkt css nu dat het een invulveld is, hier moet ik nog even naar kijken -->
+        <!--Het is ook een invulveld, die gevuld wordt met de code zodat ik hem ergens vandaan kan toveren-->
+        <input type="text" name="barcode" id="barcode" value="hier komt de barcode!" class="requiredform">
+    </form>
+
+    <button name="buttonClick" onclick="scan();">Scan de barcode!</button><br>
+
+    <div id="deviceready">
+        <a class="padded-for-cell barcodetext" href="#!03-keuzemenu">Yes je hebt de code! Ga verder!</a>
+    </div>
+
+</div>
