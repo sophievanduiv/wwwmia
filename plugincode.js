@@ -47,7 +47,10 @@ function scan() {
             document.getElementById('barcode').value = barcodenummers;     //the value of barcode goes into a form (invisible)
             //window.localStorage.setItem("barcode", barcode);        //safe the code in temporary memory
             //alert(document.getElementById('barcode').value);
+<<<<<<< HEAD
             $(".barcodetext").css("display", "block");
+=======
+>>>>>>> origin/master
         },
         function (error) {
             alert("Scanning failed: " + error);                     //if something goes wrong
@@ -55,6 +58,23 @@ function scan() {
         }
     );
 
+<<<<<<< HEAD
+=======
+    //THIS IS NOT WORKING YET
+    //for some reason nothing works anymore if I put this in here
+    function checkbutton(check) {
+        var nextbuttonbarcode = document.getElementsByClassName('padded-for-cell barcodetext');
+
+        if (check==true) {
+            nextbuttonbarcode.style.display = "block";
+        }
+        else {
+            nextbuttonbarcode.style.display = "none";
+        }
+
+    }
+
+>>>>>>> origin/master
     /*TEST WITHOUT BARCODE
     var barcode = "123456789789";
     document.getElementById('barcode').value = barcode;
@@ -284,7 +304,10 @@ Phonon.Navigator().on({page: '06-overzicht', template: '06-overzicht', asynchron
         document.getElementById("redenenoverzichtstank").innerHTML = document.getElementById('stankcontent').value;
         document.getElementById("redenenoverzichtsvies").innerHTML = document.getElementById('viescontent').value;
         document.getElementById("redenenoverzichtsprullenbak").innerHTML = document.getElementById('prullenbakcontent').value;
+<<<<<<< HEAD
         document.getElementById("redenenoverzichtsoverige").innerHTML = document.getElementById('overigecontent').value;
+=======
+>>>>>>> origin/master
 
         //load the image in this page
         document.getElementById("imagemain").src = document.getElementById("smallImage").src;

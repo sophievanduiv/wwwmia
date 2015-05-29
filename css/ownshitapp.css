@@ -71,10 +71,13 @@ p {
     margin: auto 0;
 }
 
+<<<<<<< HEAD
 .barcodetext {
     display: none;
 }
 
+=======
+>>>>>>> origin/master
 .redenenlijst label {
     width: 80%;
     margin-left: 10%;
