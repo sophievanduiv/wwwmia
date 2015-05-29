@@ -46,10 +46,6 @@ body {
         color-stop(0, #66CCFF),
         color-stop(0.51, #E0F5FF)
     );
-	
-	<!--background-image: url(../img/background.jpg);-->
-	<!--background-size: cover; 
-    background-attachment:fixed;-->
     font-family: 'Helvetica', Arial, sans-serif;
     font-size:12px;
     height:100%;
@@ -61,14 +57,14 @@ body {
 	/*text-shadow: 2px 2px 4px #000000;*/
 }
 
-/* Portrait layout (default) */
+/* Portrait layout (default)
 .startScherm {
-    position:absolute;             /* position in the center of the screen */
+    position:absolute;             /* position in the center of the screen
     left:40%;
     top:50%;
     text-align:center;
     margin:-115px 0px 0px -112px;  /* offset vertical: half of image height and text area height */
-                                   /* offset horizontal: half of text area width */
+                                   /* offset horizontal: half of text area width
 }
 
 /* Landscape layout (with min-width) */
@@ -102,13 +98,6 @@ body {
     display:none;
     text-align: center;
     color:#fff;
-}
-
-.logo{
-    width:300px;
-    height:100px;
-    /*background-color: red;*/
-    margin-bottom:10px;
 }
 
 #homeButton{

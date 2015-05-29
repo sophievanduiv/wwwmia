@@ -1,0 +1,39 @@
+<div class="container">
+    <header class="header-bar">
+        <a href="#!03-keuzemenu" class="btn-action pull-left">Vorige</a>
+        <h1 class="title">Reden geven</h1>
+    </header>
+
+    <ul class="list">
+        <form class="redenenlijst">
+
+            <h1>Lijst van redenen:</h1>
+
+            <label>
+            <input type="checkbox" id="ruiktvies" value="stank"><p>Het stinkt</p>
+            </label>
+            <label>
+            <input type="checkbox" id="vies" value="vies"><p>Het is vies</p>
+            </label>
+            <label>
+            <input type="checkbox" id="prullenbak" value="prullenbak"><p>Prullenbak zit vol</p>
+            </label>
+
+
+            <label>Overige:</label><br>
+            <label>
+            <!-- zie commentaar over input bij 02-barcode -->
+            <input type="text" name="overigecontent" id="overigecontent" value="Vul hier overige redenen in!">
+            </label><br><br>
+            <label>Verzamelde content:</label>
+            <br>
+            <input style="display: none;" type="text" name="stankcontent" id="stankcontent" value="">
+            <input style="display: none;" type="text" name="viescontent" id="viescontent" value="">
+            <input style="display: none;" type="text" name="prullenbakcontent" id="prullenbakcontent" value="">
+        </form>
+    </ul>
+
+    <a class="padded-for-cell" href="#!06-overzicht">Volgende!</a>
+
+</div>
+
