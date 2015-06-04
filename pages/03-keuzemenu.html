@@ -1,19 +1,19 @@
     <header class="header-bar">
+        <img class="logosmall" src="./img/logo.png" height="70%" width="8%">
         <a href="#!02-barcode" class="btn-action pull-left">Vorige</a>
-        <h1 class="title">Keuzemenu</h1>
     </header>
     
     <div class="container">
-        <h1>Maak hier je eerste keuze</h1>
+        <h1>Foto maken</h1>
 
         <p>
-            Als je wilt kan je een foto maken (als de wc er bijvoorbeeld heel smerig uitziet). Hier na kan je reden opgeven. <br><br>
-            Vindt je het niet nodig om een foto te maken maar alleen iets door te geven? Ga dan meteen door naar reden doorgeven!
+            Als je wilt kan je ook nog een foto maken van de WC (als bewijs dat ie
+            heel smerig is). Dit is niet verplicht, je kan deze stap ook overslaan!
         </p>
 
         <div id="deviceready">
-            <button style="margin-bottom: 20px;" onclick="capturePhoto();">Capture Photo</button> <br>
-            <a class="padded-for-cell" style="display:none;" id="saveImage" href="#!05-redenen">Foto opslaan en verzenden</a>
+            <button class="padded-for-cell two" onclick="capturePhoto();">Maak foto</button> <br>
+            <a class="padded-for-cell two photonext" id="saveImage" href="#!05-redenen">Ga verder</a>
         </div>
 
         <form id="contact_form" method="post" onSubmit="return false">
@@ -22,3 +22,5 @@
         <img style="display:none;" width="100%" id="smallImage" src="" />
 
     </div>
+
+    <footer></footer>

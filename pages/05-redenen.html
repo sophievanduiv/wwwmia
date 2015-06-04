@@ -1,43 +1,60 @@
-<div class="container">
-    <header class="header-bar">
-        <a href="#!03-keuzemenu" class="btn-action pull-left">Vorige</a>
-        <h1 class="title">Reden geven</h1>
-    </header>
+<header class="header-bar">
+    <img class="logosmall" src="./img/logo.png" height="70%" width="8%">
+    <a href="#!03-keuzemenu" class="btn-action pull-left">Vorige</a>
+</header>
 
-    <ul class="list">
+<div class="container">
+
+    <h1>Redenen</h1>
+
+    <p>Selecteer een reden waarom je de melding maakt. Als de reden er niet tussen zit,
+    of je wilt een aanvulling geven kan dat natuurlijk ook!</p>
+
         <form class="redenenlijst">
 
-            <h1>Lijst van redenen:</h1>
+            <div>
+              <label>
+                    <input type="checkbox" id="ruiktvies" value="stank"><p>Het stinkt</p>
+                </label>
+                <label>
+                    <input type="checkbox" id="vies" value="vies"><p>Het is vies</p>
+                </label>
+                <label>
+                    <input type="checkbox" id="prullenbak" value="prullenbak"><p>Prullenbak zit vol</p>
+                </label>
+            </div>
 
-            <label>
-            <input type="checkbox" id="ruiktvies" value="stank"><p>Het stinkt</p>
-            </label>
-            <label>
-            <input type="checkbox" id="vies" value="vies"><p>Het is vies</p>
-            </label>
-            <label>
-            <input type="checkbox" id="prullenbak" value="prullenbak"><p>Prullenbak zit vol</p>
-            </label>
+            <div>
+                <label>
+                    <input type="checkbox" id="wcpapier" value="wcpapier"><p>WC papier is op</p>
+                </label>
+                <label>
+                    <input type="checkbox" id="zeep" value="zeep"><p>Zeep is op</p>
+                </label>
+                <label>
+                    <input type="checkbox" id="handdoekjes" value="handdoekjes"><p>Handdoekjes op</p>
+                </label>
+            </div>
 
-
-            <label>Overige:</label><br>
             <label>
             <!-- zie commentaar over input bij 02-barcode -->
-<<<<<<< HEAD
-            <input type="text" name="overigecontent" id="overigecontent" value="Vul hier overige redenen in!">
-=======
-            <input type="text" name="overige" id="overige" value="Vul hier overige redenen in!">
->>>>>>> origin/master
-            </label><br><br>
-            <label>Verzamelde content:</label>
-            <br>
+            <input type="text" name="overigecontent" id="overigecontent" placeholder="Vul hier overige redenen in!">
+            </label>
+
+            <!--Hidden information-->
             <input style="display: none;" type="text" name="stankcontent" id="stankcontent" value="">
             <input style="display: none;" type="text" name="viescontent" id="viescontent" value="">
             <input style="display: none;" type="text" name="prullenbakcontent" id="prullenbakcontent" value="">
-        </form>
-    </ul>
 
-    <a class="padded-for-cell" href="#!06-overzicht">Volgende!</a>
+            <input style="display: none;" type="text" name="wcpapiercontent" id="wcpapiercontent" value="">
+            <input style="display: none;" type="text" name="zeepcontent" id="zeepcontent" value="">
+            <input style="display: none;" type="text" name="handdoekjescontent" id="handdoekjescontent" value="">
+
+        </form>
+
+    <a class="padded-for-cell redenennext" href="#!06-overzicht">Bijna klaar!</a>
 
 </div>
+
+<footer></footer>
 

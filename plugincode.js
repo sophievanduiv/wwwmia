@@ -23,7 +23,7 @@ var destinationType;                                                // sets the 
 
 //everything that needs to load for the application
 function onDeviceReady() {
-    Phonon.Navigator().start('00-welkomscherm');                    //load the content for the indexscreen: 00-welkomscherm.html
+    Phonon.Navigator().start('01-meldingstart');                    //load the content for the indexscreen: 00-welkomscherm.html
     pictureSource=navigator.camera.PictureSourceType;               //to see which part of the phone is used to take the picture
     destinationType=navigator.camera.DestinationType;               //to see where the photo should go after taking the picture
 }
@@ -47,10 +47,8 @@ function scan() {
             document.getElementById('barcode').value = barcodenummers;     //the value of barcode goes into a form (invisible)
             //window.localStorage.setItem("barcode", barcode);        //safe the code in temporary memory
             //alert(document.getElementById('barcode').value);
-<<<<<<< HEAD
-            $(".barcodetext").css("display", "block");
-=======
->>>>>>> origin/master
+            $(".barcodetext").css("opacity", "1");
+            $(".barcodetext").css("pointer-events", "auto");
         },
         function (error) {
             alert("Scanning failed: " + error);                     //if something goes wrong
@@ -58,23 +56,6 @@ function scan() {
         }
     );
 
-<<<<<<< HEAD
-=======
-    //THIS IS NOT WORKING YET
-    //for some reason nothing works anymore if I put this in here
-    function checkbutton(check) {
-        var nextbuttonbarcode = document.getElementsByClassName('padded-for-cell barcodetext');
-
-        if (check==true) {
-            nextbuttonbarcode.style.display = "block";
-        }
-        else {
-            nextbuttonbarcode.style.display = "none";
-        }
-
-    }
-
->>>>>>> origin/master
     /*TEST WITHOUT BARCODE
     var barcode = "123456789789";
     document.getElementById('barcode').value = barcode;
@@ -129,35 +110,9 @@ function write (el, text) {
 
 //the first content for the page loaded in index
 Phonon.Navigator({
-    defaultPage: '00-welkomscherm',
+    defaultPage: '01-meldingstart',
     templatePath: 'pages',
     pageAnimations: true
-});
-
-//functions for the first page
-//don't need much because we don't have to use a link to load this content to click on, it's the homepage.
-//If you go to the second page (down) there are more functions necessary to load it.
-Phonon.Navigator().on({page: '00-welkomscherm', template: '00-welkomscherm', asynchronous: false}, function(activity) {
-
-    activity.onCreate(function(self, el, req) {
-        console.log('00-welkomscherm: onCreate');                       //loads when you open the page
-    });
-
-    activity.onReady(function(self, el, req) {
-        console.log('00-welkomscherm: onReady');                        //loads when you open the page
-    });
-
-    activity.onTransitionEnd(function() {
-        console.log('00-welkomscherm: onTransitionEnd');                //loads when you open the page
-    });
-
-    activity.onQuit(function(self) {
-        console.log('00-welkomscherm: onQuit');                         //loads when you leave the page
-    });
-
-    activity.onHidden(function(el) {
-        console.log('00-welkomscherm: onHidden');                       //loads when you leave the page
-    });
 });
 
 //functions for the second page: melding start
@@ -165,11 +120,25 @@ Phonon.Navigator().on({page: '00-welkomscherm', template: '00-welkomscherm', asy
 Phonon.Navigator().on({page: '01-meldingstart', template: '01-meldingstart', asynchronous: false}, function(activity) {
 
     activity.onCreate(function(self, el, req) {
-        console.log('01-meldingstart: onCreate');
-        self.runReady();                                                //after creating the page it loads the content
+
+        $('.header-bar').css('display','none');
+        $('.container').css('display','none');
+        $('footer').css('display','none');
+        console.log('01-meldingstart: onCreate');                                              //after creating the page it loads the content
     });
 
     activity.onReady(function(self, el, req) {
+
+        //hide loading gif and show buttons to login
+        setTimeout(function(){
+            $("#background-start").fadeOut("slow", function() {
+                $('.header-bar').fadeIn("slow");
+                $('.container').fadeIn("slow");
+                $('footer').fadeIn("slow");
+            });
+
+        }, 1000);
+
         console.log('01-meldingstart: onReady');
     });
 
@@ -192,52 +161,17 @@ Phonon.Navigator().on({page: '01-meldingstart', template: '01-meldingstart', asy
 Phonon.Navigator().on({page: '02-barcode', template: '02-barcode', asynchronous: false}, function(activity) {
 
     activity.onCreate(function(self, el, req) {
-        console.log('02-barcode: onCreate');
-        self.runReady();                                                //after creating the page it loads the content
-    });
 
-    activity.onReady(function(self, el, req) {
-        console.log('02-barcode: onReady');
-    });
+        $(".barcodetext").css("opacity", "0.6");
+        $(".barcodetext").css("pointer-events", "none");
 
-    activity.onTransitionEnd(function() {
-        console.log('02-barcode: onTransitionEnd');
+                                               //after creating the page it loads the content
     });
-
-    activity.onQuit(function(self) {
-        console.log('02-barcode: onQuit');
-    });
-
-    activity.onHidden(function(el) {
-        console.log('02-barcode: onHidden');
-    });
-
 });
 
 //functions for the fourth page: keuzemenu
 //more functions necessary because it needs to load after clicking on the link to get to this page.
 Phonon.Navigator().on({page: '03-keuzemenu', template: '03-keuzemenu', asynchronous: false}, function(activity) {
-
-    activity.onCreate(function(self, el, req) {
-        console.log('03-keuzemenue: onCreate');
-        self.runReady();                                                //after creating the page it loads the content
-    });
-
-    activity.onReady(function(self, el, req) {
-        console.log('03-keuzemenu: onReady');
-    });
-
-    activity.onTransitionEnd(function() {
-        console.log('03-keuzemenu: onTransitionEnd');
-    });
-
-    activity.onQuit(function(self) {
-        console.log('03-keuzemenu: onQuit');
-    });
-
-    activity.onHidden(function(el) {
-        console.log('03-keuzemenu: onHidden');
-    });
 
 });
 
@@ -248,10 +182,24 @@ Phonon.Navigator().on({page: '05-redenen', template: '05-redenen', asynchronous:
 
     activity.onCreate(function(self, el, req) {
         console.log('05-redenen: onCreate');
+
+        $(".redenennext").css("opacity", "0.6");
+        $(".redenennext").css("pointer-events", "none");
+
         self.runReady();                                                //after creating the page it loads the content
     });
 
     activity.onReady(function(self, el, req) {
+
+        $("#overigecontent").focusin(function(){
+            $(".container").css('margin-top','-30%');
+            $(".redenennext").css('bottom','50%');
+        });
+
+        $("#overigecontent").focusout(function(){
+            $(".container").css('margin-top','23%');
+            $(".redenennext").css('bottom','10%');
+        });
 
         //set the reasons for sending the message
         //need unbind: without unbind it runs the function 2 times (for some reason)
@@ -273,19 +221,37 @@ Phonon.Navigator().on({page: '05-redenen', template: '05-redenen', asynchronous:
             document.getElementById('prullenbakcontent').value = "De prullenbak zit vol."
         });
 
+        $('#wcpapier').unbind('click');
+        $('#wcpapier').on('click',function () {
+            //alert('hallo');
+            document.getElementById('wcpapiercontent').value = "Het WC papier is op."
+        });
+
+        $('#zeep').unbind('click');
+        $('#zeep').on('click',function () {
+            //alert('hallo');
+            document.getElementById('zeepcontent').value = "De zeep is op."
+        });
+
+        $('#handdoekjes').unbind('click');
+        $('#handdoekjes').on('click',function () {
+            //alert('hallo');
+            document.getElementById('handdoekjescontent').value = "De handdoekjes zijn op."
+        });
+
+        //To see if there is something check or a value
+        $(".redenenlijst div label").click(function(e) {
+            (state= $(this).find("input:checkbox").attr("checked"))
+                if (state==true){ // WITH TOGGLE
+                    $(".redenennext").css("opacity", "0.6");
+                    $(".redenennext").css("pointer-events", "none");
+                }else {
+                    $(".redenennext").css("opacity", "1");
+                    $(".redenennext").css("pointer-events", "auto");
+                }
+        });
+
         console.log('05-redenen: onReady');
-    });
-
-    activity.onTransitionEnd(function() {
-        console.log('05-redenen: onTransitionEnd');
-    });
-
-    activity.onQuit(function(self) {
-        console.log('05-redenen: onQuit');
-    });
-
-    activity.onHidden(function(el) {
-        console.log('05-redenen: onHidden');
     });
 
 });
@@ -304,35 +270,29 @@ Phonon.Navigator().on({page: '06-overzicht', template: '06-overzicht', asynchron
         document.getElementById("redenenoverzichtstank").innerHTML = document.getElementById('stankcontent').value;
         document.getElementById("redenenoverzichtsvies").innerHTML = document.getElementById('viescontent').value;
         document.getElementById("redenenoverzichtsprullenbak").innerHTML = document.getElementById('prullenbakcontent').value;
-<<<<<<< HEAD
+
+        document.getElementById("redenenoverzichtswcpapier").innerHTML = document.getElementById('wcpapiercontent').value;
+        document.getElementById("redenenoverzichtszeep").innerHTML = document.getElementById('zeepcontent').value;
+        document.getElementById("redenenoverzichtshanddoekjes").innerHTML = document.getElementById('handdoekjescontent').value;
+
         document.getElementById("redenenoverzichtsoverige").innerHTML = document.getElementById('overigecontent').value;
-=======
->>>>>>> origin/master
 
         //load the image in this page
         document.getElementById("imagemain").src = document.getElementById("smallImage").src;
         //alert(document.getElementById("smallImage").src);
 
+        //If there is no image taken, don't show an image element in de end.
+        if ($('#smallImage').attr('src')=="") {
+            $('#imagemain').css('display','none');
+        }
+        else {
+            ('#imagemain').css('display','block');
+        }
+
         console.log('06-overzicht: onCreate');
         self.runReady();                                                //after creating the page it loads the content
     });
 
-    activity.onReady(function(self, el, req) {
-        console.log('06-overzicht: onReady');
-    });
-
-    activity.onTransitionEnd(function() {
-        console.log('06-overzicht: onTransitionEnd');
-    });
-
-    activity.onQuit(function(self) {
-
-        console.log('06-overzicht: onQuit');
-    });
-
-    activity.onHidden(function(el) {
-        console.log('06-overzicht: onHidden');
-    });
 
 });
 
@@ -343,22 +303,6 @@ Phonon.Navigator().on({page: '07-verzonden', template: '07-verzonden', asynchron
     activity.onCreate(function(self, el, req) {
         console.log('07-verzonden: onCreate');
         self.runReady();                                                //after creating the page it loads the content
-    });
-
-    activity.onReady(function(self, el, req) {
-        console.log('07-verzonden: onReady');
-    });
-
-    activity.onTransitionEnd(function() {
-        console.log('07-verzonden: onTransitionEnd');
-    });
-
-    activity.onQuit(function(self) {
-        console.log('07-verzonden: onQuit');
-    });
-
-    activity.onHidden(function(el) {
-        console.log('07-verzonden: onHidden');
     });
 
 });
