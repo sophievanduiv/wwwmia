@@ -55,15 +55,11 @@ function scan() {
             checkbutton (checkbarcodenext);
         }
     );
-
     /*TEST WITHOUT BARCODE
     var barcode = "123456789789";
     document.getElementById('barcode').value = barcode;
     window.localStorage.setItem("key", barcode);*/
-
 }
-
-
 
 //----------------------------------------------------CODE FOR THE CAMERA(PIC)------------------------------------------
 
@@ -270,11 +266,11 @@ Phonon.Navigator().on({page: '06-overzicht', template: '06-overzicht', asynchron
         document.getElementById("redenenoverzichtstank").innerHTML = document.getElementById('stankcontent').value;
         document.getElementById("redenenoverzichtsvies").innerHTML = document.getElementById('viescontent').value;
         document.getElementById("redenenoverzichtsprullenbak").innerHTML = document.getElementById('prullenbakcontent').value;
-
         document.getElementById("redenenoverzichtswcpapier").innerHTML = document.getElementById('wcpapiercontent').value;
         document.getElementById("redenenoverzichtszeep").innerHTML = document.getElementById('zeepcontent').value;
         document.getElementById("redenenoverzichtshanddoekjes").innerHTML = document.getElementById('handdoekjescontent').value;
-
+		
+		//Formuliertje
         document.getElementById("redenenoverzichtsoverige").innerHTML = document.getElementById('overigecontent').value;
 
         //load the image in this page
