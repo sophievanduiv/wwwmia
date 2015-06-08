@@ -7,12 +7,13 @@
 
     <h1>Scan Barcode</h1>
 
-    <p>Scan nu de barcode die op de deur van het WC hokje zit.</p>
+    <p>Scan de barcode op de WC-deur.</p>
 
     <form id="contact_form" method="post" onSubmit="return false">
         <!-- Door "input" denkt css nu dat het een invulveld is, hier moet ik nog even naar kijken -->
         <!--Het is ook een invulveld, die gevuld wordt met de code zodat ik hem ergens vandaan kan toveren-->
-        <input type="text" name="barcode" id="barcode" placeholder="Hier komt het resultaat" class="requiredform" readonly>
+        <input style="display:none;" type="text" name="barcode" id="barcode" placeholder="Hier komt het resultaat" class="requiredform" readonly>
+        <p id="toonBarcode">Hier komt de barcode</p>
     </form>
 
   <div id="deviceready">

@@ -1296,13 +1296,10 @@ input[type="color"]:focus {
   border-color: #0084e7;
 }
 label {
-  font-size: 1.1em;/*13px;*/
+  font-size: 1em;/*13px;*/
   display: block;
   clear: both;
   color: #949494;
-}
-label p{
-  margin-left: 10%;
 }
 label input[type="checkbox"] {
   margin-top: -4px;

@@ -45,6 +45,9 @@ function scan() {
         function (result) {
             var barcodenummers = result.text;                              //to get the code in text
             document.getElementById('barcode').value = barcodenummers;     //the value of barcode goes into a form (invisible)
+            //try p id instead of inputfield
+            document.getElementById('toonBarcode').innerHTML = barcodenummers;
+            
             //window.localStorage.setItem("barcode", barcode);        //safe the code in temporary memory
             //alert(document.getElementById('barcode').value);
             $(".barcodetext").css("opacity", "1");

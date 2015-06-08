@@ -97,11 +97,12 @@ p {
             font-weight: 300;
             font-size: 1.2em;/*16px;*/
             line-height: 1.7;
-            text-align: justify;
+            text-align: center;
         }
 
         #centerparagraaf{
             text-align: center;   
+            font-size: 1.3em;
         }
 
         #deviceready {
@@ -152,6 +153,11 @@ p {
             border-top: 1px solid #b3b3b3;
             box-shadow: inset 0 0 1px #000000;
             border-bottom: none;
+        }
+
+        #toonBarcode {
+            color:#4D4D4D;
+            font-style: italic;
         }
 
         input[type="checkbox"] {
@@ -229,6 +235,12 @@ p {
 .redenenlijst p {
     float: left;
     text-align: left;
-    margin-left: 20px;
+    margin-left: 10px;
+}
+
+#verzonden-label{
+    float: left;
+    text-align: left;
+    margin-left: 10px;   
 }
 
