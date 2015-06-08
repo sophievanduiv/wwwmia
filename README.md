@@ -16,7 +16,9 @@ It does not work with iOS, so the ShitApp is only an Android application.
 
 ## Plugins
 **com.phonegap.plugins.barcodescanner** This plugin allows the app to read barcodes. The goal is that every toilet is getting his own barcode, which can be send to the cleaningcompany when needed so they know which toilet to clean.</br>
+</br>
 **org.apache.cordova.camera** This plugin allows the app to use the phone's camera. This function allows users to send an image that explains the reason why the toilet needs to be cleaned. </br>
+</br>
 OPTION **cordova.plugins.email** This plugin allows to send information via e-mail. It will only be used if Helpshift doens't work properly.
 
 ## External services
