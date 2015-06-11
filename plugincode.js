@@ -96,6 +96,9 @@ function onFail(message) {
     alert('Failed to load picture because: ' + message);
 }
 
+//--------------------------------------------HERE IS THE SMS FUNCTION--------------------------------------------------
+
+
 //--------------------------------------------HERE IS ALL THE EXTRA CODE FOR PHONON-------------------------------------
 
 //function to render some text on a element
