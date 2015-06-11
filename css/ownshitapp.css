@@ -244,3 +244,27 @@ p {
     margin-left: 10px;   
 }
 
+/* MELDING MAKEN */
+table{
+    width:100%;
+}
+
+table, .table > tbody + tbody{
+     border: 0 !important;
+ }
+
+table tbody tr td{
+     border: 0 !important;
+ }
+
+table tr td:nth-child(1){
+ float:rigth;   
+}
+
+table tr td:nth-child(2){
+ float:left;  
+ /* tekst staat nu in het midden tegenover de afbeelding */
+ margin-top:5px;
+ font-size:1.2em;
+ text-transform: none;    
+}
