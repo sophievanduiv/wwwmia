@@ -33,6 +33,12 @@ function onDeviceReady() {
 );
 }
 
+var messageVerzenden = false;
+
+function sendMessage() {
+    messageVerzenden = true;
+}
+
 //----------------------------------------------------SEND MAIL -------------------------------------------------------
 function sendMail() {
 
@@ -58,6 +64,22 @@ function sendMail() {
                     '<b>Wc Nummer:</b>' +barcode+ '<br>' +
                     '<b>Reden:</b>' +'<span>'+reden1+'</span><span>'+reden2+'</span><span>'+reden3+'</span><span>'+reden4+'</span><span>'+reden5+'</span><span>'+reden6+'</span><span>'+reden7+'</span>',                     // email body (for HTML, set isHtml to true
     });
+    
+    if (messageVerzenden == true) {
+        //alert('mag een berichtje versturen!');
+
+            var t = new Date();
+            t.setSeconds(t.getSeconds + 8);
+                cordova.plugins.notification.local.schedule({
+                    title: "De WC is schoongemaakt!",
+                    text: "De WC met barcode "+ barcode +" is nu schoon! Ga hem maar snel proberen!",
+                    at: t
+                });
+ 
+    }
+    else {
+        //alert('mag geen berichtje versturen!');
+    }
 
 
 }
