@@ -69,7 +69,7 @@ function sendMail() {
         //alert('mag een berichtje versturen!');
 
             var t = new Date();
-            t.setSeconds(t.getSeconds + 8);
+            t.setSeconds(t.getSeconds() + 8);
                 cordova.plugins.notification.local.schedule({
                     title: "De WC is schoongemaakt!",
                     text: "De WC met barcode "+ barcode +" is nu schoon! Ga hem maar snel proberen!",
