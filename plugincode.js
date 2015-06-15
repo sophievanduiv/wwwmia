@@ -26,6 +26,40 @@ function onDeviceReady() {
     Phonon.Navigator().start('01-meldingstart');                    //load the content for the indexscreen: 00-welkomscherm.html
     pictureSource=navigator.camera.PictureSourceType;               //to see which part of the phone is used to take the picture
     destinationType=navigator.camera.DestinationType;               //to see where the photo should go after taking the picture
+    cordova.plugins.email.isAvailable(
+    function (isAvailable) {
+        //alert('Service is not available');
+    }
+);
+}
+
+//----------------------------------------------------SEND MAIL -------------------------------------------------------
+function sendMail() {
+
+    var email = document.getElementById("email").value;
+    var foto = document.getElementById('imagemain').src;
+    var barcode = document.getElementById('barcodetext').innerHTML;
+    var reden1 = document.getElementById('redenenoverzichtstank').innerHTML;
+    var reden2 = document.getElementById('redenenoverzichtsvies').innerHTML;
+    var reden3 = document.getElementById('redenenoverzichtsprullenbak').innerHTML;
+    var reden4 = document.getElementById('redenenoverzichtswcpapier').innerHTML;
+    var reden5 = document.getElementById('redenenoverzichtshanddoekjes').innerHTML;
+    var reden6 = document.getElementById('redenenoverzichtszeep').innerHTML;
+    var reden7 = document.getElementById('redenenoverzichtsoverige').innerHTML;
+    
+    
+    //alert (email + ' '+ foto +' '+ barcode);
+
+    cordova.plugins.email.open({
+        to:          email,                     // email addresses for TO field
+        attachments: foto,                      // file paths or base64 data streams
+        subject:    'Wc Nummer: ' + barcode,    // subject of the email
+        body:       '<h1>Gegevens Wc</h1> <br>' +
+                    '<b>Wc Nummer:</b>' +barcode+ '<br>' +
+                    '<b>Reden:</b>' +'<span>'+reden1+'</span><span>'+reden2+'</span><span>'+reden3+'</span><span>'+reden4+'</span><span>'+reden5+'</span><span>'+reden6+'</span><span>'+reden7+'</span>',                     // email body (for HTML, set isHtml to true
+    });
+
+
 }
 
 //----------------------------------------------------CODE FOR THE BARSCANNER------------------------------------------
@@ -220,25 +254,25 @@ Phonon.Navigator().on({page: '05-redenen', template: '05-redenen', asynchronous:
         $('#prullenbak').unbind('click');
         $('#prullenbak').on('click',function () {
             //alert('hallo');
-            document.getElementById('prullenbakcontent').value = "De prullenbak zit vol."
+            document.getElementById('prullenbakcontent').value = "De prullenbak zit vol <br>"
         });
 
         $('#wcpapier').unbind('click');
         $('#wcpapier').on('click',function () {
             //alert('hallo');
-            document.getElementById('wcpapiercontent').value = "Het WC papier is op."
+            document.getElementById('wcpapiercontent').value = "Het WC papier is op <br>"
         });
 
         $('#zeep').unbind('click');
         $('#zeep').on('click',function () {
             //alert('hallo');
-            document.getElementById('zeepcontent').value = "De zeep is op."
+            document.getElementById('zeepcontent').value = "De zeep is op <br>"
         });
 
         $('#handdoekjes').unbind('click');
         $('#handdoekjes').on('click',function () {
             //alert('hallo');
-            document.getElementById('handdoekjescontent').value = "De handdoekjes zijn op."
+            document.getElementById('handdoekjescontent').value = "De handdoekjes zijn op <br>"
         });
 
         //To see if there is something check or a value
