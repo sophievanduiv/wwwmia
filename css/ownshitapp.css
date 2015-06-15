@@ -75,8 +75,8 @@ p {
         }
 
     .container {
-        height: 62%;
-        margin-top: 23%;
+        height: 58%;
+        margin-top: 27%;
         text-align: center;
         text-decoration-color: #000;
         width: 95%;
@@ -90,19 +90,14 @@ p {
             color: #373d46;
             font-family: 'Bebas Neue Regular';
             font-size: 40px;
-            margin-bottom: 5%;
+            margin-bottom: 7%;
         }
 
         .container p {
             font-weight: 300;
             font-size: 1.2em;/*16px;*/
             line-height: 1.7;
-            text-align: center;
-        }
-
-        #centerparagraaf{
-            text-align: center;   
-            font-size: 1.3em;
+            text-align: justify;
         }
 
         #deviceready {
@@ -221,7 +216,7 @@ p {
 .redenenlijst div {
     width: 50%;
     float: left;
-    margin-bottom: 7%;
+    margin-bottom: 1%;
 }
 
 .redenenlijst label {
@@ -230,18 +225,34 @@ p {
 .redenenlijst label input[type=checkbox],
 .container label input[type=checkbox]{
     float: left;
+    margin-bottom: 32px;
 }
 
 .redenenlijst p {
     float: left;
     text-align: left;
     margin-left: 10px;
+    margin-top: -4px;
+}
+
+.container span {
+    color: #4D4D4D;
+    font-style: italic;
 }
 
 #verzonden-label{
     float: left;
     text-align: left;
     margin-left: 10px;   
+}
+
+/*FOTO*/
+#smallImage {
+    margin-top: -23px;
+}
+
+#imagemain {
+   margin-top: 8%;
 }
 
 /* MELDING MAKEN */
@@ -258,7 +269,9 @@ table tbody tr td{
  }
 
 table tr td:nth-child(1){
- float:rigth;   
+ float:left;
+    text-align: left;
+    padding-left: 0;
 }
 
 table tr td:nth-child(2){
@@ -266,5 +279,6 @@ table tr td:nth-child(2){
  /* tekst staat nu in het midden tegenover de afbeelding */
  margin-top:5px;
  font-size:1.2em;
- text-transform: none;    
+ text-transform: none;
+ padding-left: 0;
 }

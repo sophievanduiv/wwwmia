@@ -11,18 +11,19 @@
         Bedankt voor de melding, we gaan het zo snel mogelijk schoonmaken!
     </p>
 
-    <!--<label>
-        <input type="checkbox" id="sendmessage" value="sendmessage"><p id="verzonden-label"> Stuur notificatie als WC schoon is</p>
-    </label>-->
-    <input type="checkbox" value="SendMessage" onclick="sendMessage();">Verzenden berichtje als wc klaar is
+    <form class="redenenlijst">
         <label>
-            <!-- zie commentaar over input bij 02-barcode -->
-            <input type="text" name="email" id="email" value="sophievanduiv@gmail.com">
+            <input type="checkbox" value="SendMessage" onclick="sendMessage();">
         </label>
+            <p>Ontvang een berichtje als de WC schoon is</p>
+    </form>
+
+
+            <input type="text" name="email" style="display: none;" id="email" value="sophievanduiv@gmail.com">
     
     <div id="deviceready">
-        <a class="padded-for-cell email" onclick="sendMail()" style="bottom: 22%;" href="#">SEND PUSH</a>
-        <a class="padded-for-cell" href="#!01-meldingstart"><img src="./img/check-white.png" height="auto" width="15%" style="margin-top:-5%;"></a>
+        <!--<a class="padded-for-cell email" onclick="sendMail()" style="bottom: 22%;" href="#">SEND PUSH</a>-->
+        <a class="padded-for-cell" onclick="sendMail()" href="#!01-meldingstart"><img src="./img/check-white.png" height="auto" width="10%" style="margin-top:-2%;"></a>
     </div>
 </div>
 

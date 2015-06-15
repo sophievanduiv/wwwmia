@@ -22,34 +22,62 @@
     <favorites_list name="www" />
   </component>
   <component name="FileEditorManager">
-    <splitter split-orientation="horizontal" split-proportion="0.4167207">
+    <splitter split-orientation="horizontal" split-proportion="0.4504717">
       <split-first>
         <leaf>
+          <file leaf-file-name="01-meldingstart.html" pinned="false" current="false" current-in-tab="false">
+            <entry file="file://$PROJECT_DIR$/pages/01-meldingstart.html">
+              <provider selected="true" editor-type-id="text-editor">
+                <state line="31" column="0" selection-start="1033" selection-end="1135" vertical-scroll-proportion="-20.26923" vertical-offset="0" max-vertical-offset="748">
+                  <folding />
+                </state>
+              </provider>
+            </entry>
+          </file>
           <file leaf-file-name="index.html" pinned="false" current="false" current-in-tab="false">
             <entry file="file://$PROJECT_DIR$/index.html">
               <provider selected="true" editor-type-id="text-editor">
-                <state line="17" column="0" selection-start="877" selection-end="877" vertical-scroll-proportion="0.0" vertical-offset="289" max-vertical-offset="1020">
+                <state line="17" column="0" selection-start="877" selection-end="877" vertical-scroll-proportion="-4.6538463" vertical-offset="168" max-vertical-offset="1003">
                   <folding />
                 </state>
               </provider>
             </entry>
           </file>
-          <file leaf-file-name="plugincode.js" pinned="false" current="false" current-in-tab="false">
+          <file leaf-file-name="plugincode.js" pinned="false" current="false" current-in-tab="true">
             <entry file="file://$PROJECT_DIR$/plugincode.js">
               <provider selected="true" editor-type-id="text-editor">
-                <state line="12" column="30" selection-start="378" selection-end="378" vertical-scroll-proportion="0.0" vertical-offset="204" max-vertical-offset="4522">
+                <state line="19" column="54" selection-start="588" selection-end="588" vertical-scroll-proportion="0.3845238" vertical-offset="0" max-vertical-offset="6443">
                   <folding />
                 </state>
               </provider>
             </entry>
           </file>
-          <file leaf-file-name="00-welkomscherm.html" pinned="false" current="false" current-in-tab="true">
+          <file leaf-file-name="03-keuzemenu.html" pinned="false" current="false" current-in-tab="false">
+            <entry file="file://$PROJECT_DIR$/pages/03-keuzemenu.html">
+              <provider selected="true" editor-type-id="text-editor">
+                <state line="25" column="0" selection-start="1140" selection-end="1140" vertical-scroll-proportion="-16.346153" vertical-offset="0" max-vertical-offset="527">
+                  <folding>
+                    <element signature="n#style#0;n#img#0;n#button#0;n#div#0;n#div#0;n#!!top" expanded="true" />
+                    <element signature="n#style#0;n#img#0;n#a#0;n#div#0;n#div#0;n#!!top" expanded="true" />
+                  </folding>
+                </state>
+              </provider>
+            </entry>
+          </file>
+          <file leaf-file-name="05-redenen.html" pinned="false" current="false" current-in-tab="false">
+            <entry file="file://$PROJECT_DIR$/pages/05-redenen.html">
+              <provider selected="true" editor-type-id="text-editor">
+                <state line="11" column="35" selection-start="384" selection-end="412" vertical-scroll-proportion="-6.8076925" vertical-offset="10" max-vertical-offset="1105">
+                  <folding />
+                </state>
+              </provider>
+            </entry>
+          </file>
+          <file leaf-file-name="00-welkomscherm.html" pinned="false" current="false" current-in-tab="false">
             <entry file="file://$PROJECT_DIR$/pages/00-welkomscherm.html">
               <provider selected="true" editor-type-id="text-editor">
-                <state line="3" column="13" selection-start="182" selection-end="182" vertical-scroll-proportion="0.061077844" vertical-offset="0" max-vertical-offset="835">
-                  <folding>
-                    <element signature="n#style#0;n#a#0;n#header#0;n#!!top" expanded="true" />
-                  </folding>
+                <state line="3" column="13" selection-start="144" selection-end="144" vertical-scroll-proportion="-1.9615384" vertical-offset="0" max-vertical-offset="187">
+                  <folding />
                 </state>
               </provider>
             </entry>
@@ -57,8 +85,22 @@
           <file leaf-file-name="06-overzicht.html" pinned="false" current="false" current-in-tab="false">
             <entry file="file://$PROJECT_DIR$/pages/06-overzicht.html">
               <provider selected="true" editor-type-id="text-editor">
-                <state line="20" column="0" selection-start="630" selection-end="630" vertical-scroll-proportion="0.0" vertical-offset="340" max-vertical-offset="595">
-                  <folding />
+                <state line="26" column="51" selection-start="799" selection-end="799" vertical-scroll-proportion="-17.0" vertical-offset="0" max-vertical-offset="748">
+                  <folding>
+                    <element signature="n#style#0;n#img#0;n#a#0;n#div#0;n#div#0;n#!!top" expanded="true" />
+                  </folding>
+                </state>
+              </provider>
+            </entry>
+          </file>
+          <file leaf-file-name="02-barcode.html" pinned="false" current="false" current-in-tab="false">
+            <entry file="file://$PROJECT_DIR$/pages/02-barcode.html">
+              <provider selected="true" editor-type-id="text-editor">
+                <state line="26" column="0" selection-start="1282" selection-end="1282" vertical-scroll-proportion="-17.0" vertical-offset="0" max-vertical-offset="544">
+                  <folding>
+                    <element signature="n#style#0;n#img#0;n#button#0;n#div#0;n#div#0;n#!!top" expanded="true" />
+                    <element signature="n#style#0;n#img#0;n#a#0;n#div#0;n#div#0;n#!!top" expanded="true" />
+                  </folding>
                 </state>
               </provider>
             </entry>
@@ -67,11 +109,23 @@
       </split-first>
       <split-second>
         <leaf>
-          <file leaf-file-name="ownshitapp.css" pinned="false" current="true" current-in-tab="true">
+          <file leaf-file-name="ownshitapp.css" pinned="false" current="false" current-in-tab="false">
             <entry file="file://$PROJECT_DIR$/css/ownshitapp.css">
               <provider selected="true" editor-type-id="text-editor">
-                <state line="27" column="0" selection-start="985" selection-end="985" vertical-scroll-proportion="0.0" vertical-offset="459" max-vertical-offset="1683">
+                <state line="254" column="18" selection-start="6510" selection-end="6510" vertical-scroll-proportion="-15.2" vertical-offset="3938" max-vertical-offset="4930">
                   <folding />
+                </state>
+              </provider>
+            </entry>
+          </file>
+          <file leaf-file-name="07-verzonden.html" pinned="false" current="true" current-in-tab="true">
+            <entry file="file://$PROJECT_DIR$/pages/07-verzonden.html">
+              <provider selected="true" editor-type-id="text-editor">
+                <state line="18" column="11" selection-start="638" selection-end="638" vertical-scroll-proportion="0.36646706" vertical-offset="0" max-vertical-offset="835">
+                  <folding>
+                    <element signature="n#style#0;n#input#0;n#div#0;n#!!top" expanded="true" />
+                    <element signature="n#style#0;n#img#0;n#a#0;n#div#0;n#div#0;n#!!top" expanded="true" />
+                  </folding>
                 </state>
               </provider>
             </entry>
@@ -89,10 +143,14 @@
     <option name="changedFiles">
       <list>
         <option value="$PROJECT_DIR$/pages/05-redenen.html" />
-        <option value="$PROJECT_DIR$/pages/06-overzicht.html" />
-        <option value="$PROJECT_DIR$/plugincode.js" />
-        <option value="$PROJECT_DIR$/css/ownshitapp.css" />
         <option value="$PROJECT_DIR$/pages/00-welkomscherm.html" />
+        <option value="$PROJECT_DIR$/pages/02-barcode.html" />
+        <option value="$PROJECT_DIR$/pages/01-meldingstart.html" />
+        <option value="$PROJECT_DIR$/pages/03-keuzemenu.html" />
+        <option value="$PROJECT_DIR$/pages/06-overzicht.html" />
+        <option value="$PROJECT_DIR$/css/ownshitapp.css" />
+        <option value="$PROJECT_DIR$/pages/07-verzonden.html" />
+        <option value="$PROJECT_DIR$/plugincode.js" />
       </list>
     </option>
   </component>
@@ -129,6 +187,7 @@
       <sortByType />
     </navigator>
     <panes>
+      <pane id="Scope" />
       <pane id="ProjectPane">
         <subPane>
           <PATH>
@@ -161,29 +220,14 @@
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
             </PATH_ELEMENT>
           </PATH>
-          <PATH>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="www" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="www" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="css" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-          </PATH>
         </subPane>
       </pane>
-      <pane id="Scope" />
     </panes>
   </component>
   <component name="PropertiesComponent">
     <property name="WebServerToolWindowFactoryState" value="false" />
     <property name="FullScreen" value="false" />
-    <property name="last_opened_file_path" value="$PROJECT_DIR$/../../../../USBWebserver v8.5/8.5/root/www" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$" />
   </component>
   <component name="RunManager">
     <configuration default="true" type="PHPUnitRunConfigurationType" factoryName="PHPUnit">
@@ -212,14 +256,14 @@
   </component>
   <component name="ToolWindowManager">
     <frame x="1358" y="-8" width="1936" height="1056" extended-state="6" />
-    <editor active="false" />
+    <editor active="true" />
     <layout>
       <window_info id="Changes" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="Terminal" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="TODO" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="6" side_tool="false" content_ui="tabs" />
       <window_info id="Database" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="Structure" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.25" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
-      <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" weight="0.1799787" sideWeight="0.5" order="0" side_tool="false" content_ui="combo" />
+      <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" weight="0.09691161" sideWeight="0.5" order="0" side_tool="false" content_ui="combo" />
       <window_info id="Debug" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.4" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="Favorites" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="2" side_tool="true" content_ui="tabs" />
       <window_info id="Event Log" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="7" side_tool="true" content_ui="tabs" />
@@ -253,6 +297,43 @@
   <component name="editorHistoryManager">
     <entry file="file://$PROJECT_DIR$/index.html">
       <provider selected="true" editor-type-id="text-editor">
+        <state line="17" column="0" selection-start="877" selection-end="877" vertical-scroll-proportion="0.0" vertical-offset="289" max-vertical-offset="1003">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/plugincode.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="12" column="30" selection-start="378" selection-end="378" vertical-scroll-proportion="0.0" vertical-offset="204" max-vertical-offset="6443">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/pages/00-welkomscherm.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="3" column="13" selection-start="144" selection-end="144" vertical-scroll-proportion="0.0" vertical-offset="51" max-vertical-offset="187">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/pages/06-overzicht.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="20" column="0" selection-start="547" selection-end="547" vertical-scroll-proportion="0.0" vertical-offset="340" max-vertical-offset="731">
+          <folding>
+            <element signature="n#style#0;n#img#0;n#a#0;n#div#0;n#div#0;n#!!top" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/css/ownshitapp.css">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="27" column="0" selection-start="984" selection-end="984" vertical-scroll-proportion="0.0" vertical-offset="459" max-vertical-offset="4692">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/index.html">
+      <provider selected="true" editor-type-id="text-editor">
         <state line="17" column="0" selection-start="877" selection-end="877" vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="1020">
           <folding />
         </state>
@@ -268,16 +349,16 @@
     <entry file="file://$PROJECT_DIR$/pages/00-welkomscherm.html">
       <provider selected="true" editor-type-id="text-editor">
         <state line="3" column="13" selection-start="182" selection-end="182" vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="306">
-          <folding>
-            <element signature="n#style#0;n#a#0;n#header#0;n#!!top" expanded="true" />
-          </folding>
+          <folding />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/pages/06-overzicht.html">
       <provider selected="true" editor-type-id="text-editor">
         <state line="20" column="0" selection-start="630" selection-end="630" vertical-scroll-proportion="0.0" vertical-offset="340" max-vertical-offset="595">
-          <folding />
+          <folding>
+            <element signature="n#style#0;n#img#0;n#a#0;n#div#0;n#div#0;n#!!top" expanded="true" />
+          </folding>
         </state>
       </provider>
     </entry>
@@ -317,48 +398,89 @@
     <entry file="file://$PROJECT_DIR$/pages/06-overzicht.html">
       <provider selected="true" editor-type-id="text-editor">
         <state line="20" column="0" selection-start="630" selection-end="630" vertical-scroll-proportion="0.0" vertical-offset="18" max-vertical-offset="595">
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/pages/05-redenen.html">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="27" column="0" selection-start="997" selection-end="997" vertical-scroll-proportion="0.0" vertical-offset="222" max-vertical-offset="799" />
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/plugincode.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="12" column="30" selection-start="378" selection-end="378" vertical-scroll-proportion="0.0" vertical-offset="204" max-vertical-offset="4522">
-          <folding />
+          <folding>
+            <element signature="n#style#0;n#img#0;n#a#0;n#div#0;n#div#0;n#!!top" expanded="true" />
+          </folding>
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/index.html">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="17" column="0" selection-start="877" selection-end="877" vertical-scroll-proportion="0.0" vertical-offset="289" max-vertical-offset="1020">
+        <state line="17" column="0" selection-start="877" selection-end="877" vertical-scroll-proportion="-4.6538463" vertical-offset="168" max-vertical-offset="1003">
           <folding />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/pages/06-overzicht.html">
+    <entry file="file://$PROJECT_DIR$/pages/01-meldingstart.html">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="20" column="0" selection-start="630" selection-end="630" vertical-scroll-proportion="0.0" vertical-offset="340" max-vertical-offset="595">
+        <state line="31" column="0" selection-start="1033" selection-end="1135" vertical-scroll-proportion="-20.26923" vertical-offset="0" max-vertical-offset="748">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/pages/02-barcode.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="26" column="0" selection-start="1282" selection-end="1282" vertical-scroll-proportion="-17.0" vertical-offset="0" max-vertical-offset="544">
+          <folding>
+            <element signature="n#style#0;n#img#0;n#button#0;n#div#0;n#div#0;n#!!top" expanded="true" />
+            <element signature="n#style#0;n#img#0;n#a#0;n#div#0;n#div#0;n#!!top" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/pages/00-welkomscherm.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="3" column="13" selection-start="144" selection-end="144" vertical-scroll-proportion="-1.9615384" vertical-offset="0" max-vertical-offset="187">
           <folding />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/css/ownshitapp.css">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="27" column="0" selection-start="985" selection-end="985" vertical-scroll-proportion="0.0" vertical-offset="459" max-vertical-offset="1683">
+        <state line="254" column="18" selection-start="6510" selection-end="6510" vertical-scroll-proportion="-15.2" vertical-offset="3938" max-vertical-offset="4930">
           <folding />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/pages/00-welkomscherm.html">
+    <entry file="file://$PROJECT_DIR$/pages/03-keuzemenu.html">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="3" column="13" selection-start="182" selection-end="182" vertical-scroll-proportion="0.061077844" vertical-offset="0" max-vertical-offset="835">
+        <state line="25" column="0" selection-start="1140" selection-end="1140" vertical-scroll-proportion="-16.346153" vertical-offset="0" max-vertical-offset="527">
           <folding>
-            <element signature="n#style#0;n#a#0;n#header#0;n#!!top" expanded="true" />
+            <element signature="n#style#0;n#img#0;n#button#0;n#div#0;n#div#0;n#!!top" expanded="true" />
+            <element signature="n#style#0;n#img#0;n#a#0;n#div#0;n#div#0;n#!!top" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/pages/05-redenen.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="11" column="35" selection-start="384" selection-end="412" vertical-scroll-proportion="-6.8076925" vertical-offset="10" max-vertical-offset="1105">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/pages/06-overzicht.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="26" column="51" selection-start="799" selection-end="799" vertical-scroll-proportion="-17.0" vertical-offset="0" max-vertical-offset="748">
+          <folding>
+            <element signature="n#style#0;n#img#0;n#a#0;n#div#0;n#div#0;n#!!top" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/plugincode.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="19" column="54" selection-start="588" selection-end="588" vertical-scroll-proportion="0.3845238" vertical-offset="0" max-vertical-offset="6443">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/pages/07-verzonden.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="18" column="11" selection-start="638" selection-end="638" vertical-scroll-proportion="0.36646706" vertical-offset="0" max-vertical-offset="835">
+          <folding>
+            <element signature="n#style#0;n#input#0;n#div#0;n#!!top" expanded="true" />
+            <element signature="n#style#0;n#img#0;n#a#0;n#div#0;n#div#0;n#!!top" expanded="true" />
           </folding>
         </state>
       </provider>
