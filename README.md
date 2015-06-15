@@ -19,14 +19,9 @@ It does not work with iOS, so the ShitApp is only an Android application.
 </br>
 **org.apache.cordova.camera** This plugin allows the app to use the phone's camera. This function allows users to send an image that explains the reason why the toilet needs to be cleaned. </br>
 </br>
-OPTION **cordova.plugins.email** This plugin allows to send information via e-mail. It will only be used if Helpshift doens't work properly.
-
-## External services
-**https://www.helpshift.com/** The text and images that are being saved while using the ShitApp are send to an external service called Helpshift. Helpshift is a platform that uses it's own database to store external information. 
+**cordova.plugins.email** This plugin allows to send information via e-mail to the cleaning company.
 
 ## Back-end
-The ShitApp sends a set of information, this information has to be stored in the Helpshift database. The information includes 
-plain text and images. The cleaning company has access to this platform and their database via the Helpshift app. Via various
-notifications they're being updated with the latest new about the toilets. This is very little timeconsuming and works very easily, so it's best of both worlds.
+The information filled in by the user in the app will ben send through e-mail to the cleaning company.
 
 
